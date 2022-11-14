@@ -22,5 +22,5 @@ function afficherInput(array $tableau){
         $result.="<p>$input :<input type 'text' name='$input' /></p>";
     }
     $result.="<p><input type='submit' value ='OK'></p>";
-    return $result; 
+    return $result;  
 }
