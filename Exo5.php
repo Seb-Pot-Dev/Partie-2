@@ -16,7 +16,7 @@ afficherInput($nomsInput);</p>
 $nomsInput=["Nom", "Prenom", "Ville"];
 echo afficherInput($nomsInput);
 
-function afficherInput(array $tableau){
+function afficherInput($tableau){
     $result= "<form action='action.php' method='post'>";
     foreach ($tableau as $input){
         $result.="<p>$input :<input type 'text' name='$input' /></p>";

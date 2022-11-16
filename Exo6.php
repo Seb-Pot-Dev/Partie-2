@@ -3,12 +3,12 @@
 
 <?php
 $civilite = array("Monsieur","Madame","Mademoiselle");
-$statut=array("salarié", "étudiant", "chomeur");
+$statut=array("salarié", "étudiant", "chomeur", "retraité");
 
 alimenterListeDeroulante($civilite);
 alimenterListeDeroulante($statut);
-
-function alimenterListeDeroulante($tableau){
+ 
+function alimenterListeDeroulante ($tableau){
     echo '<select>';
     foreach($tableau as $input){
     echo '<option value=' .$input . '>' . $input . '</option>';
