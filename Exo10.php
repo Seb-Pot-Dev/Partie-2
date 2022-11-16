@@ -13,9 +13,8 @@ $champlist=array("Développeur Logiciel", "Designer Web", "Intégrateur", "Chef 
 generForm($champlist,$champtxt);
 
 function generForm($champlist,$champtxt){
-   echo generChamp($champtxt);
-echo generList($champlist);
-// echo generCheckbox2($champlist);
+    echo generChamp($champtxt);
+    echo generList($champlist);
 }
 
 $nomsInput=["Nom", "Prenom", "Ville"];
@@ -35,27 +34,10 @@ function generList($tableau){
         $result.="</select><p><input type='submit' value ='OK'></p></form>";
 return $result;
 
-// function generCheckbox($tableau){
-    //     $result="<form action='action.php' method='post'>";
-    //     foreach($tableau as $input){
-        //     $result.="<p>$input:<input type='checkbox' name='$input'/></p>";
-        // }
-        // $result.="<p><input type='submit' value ='OK'></p>";
-        // return $result;
-        // }
-}
 
-// function generCheckbox2($tableau){
-//     echo '<select>';
-//     foreach($tableau as $input){
-//     echo '<option value=' .$input . '>' . $input . '</option>';
-//     }
-//     echo '</select>';
-// }
 
 
 
 
 
 ?>
-
