@@ -10,15 +10,20 @@
 <?php
 setlocale(LC_TIME, 'fr_FR');
 date_default_timezone_set('Europe/Paris');
-echo DateTime::('%A %d %B %Y, %H:%M');
 
-// $date="2018-02-23";
 
-// function formaterDateFr($dt){
-//    $dt= DateTime::createFromFormat('Y/m/d', $date);
-//    echo $dt->format('Y-m-d H:i:s');
-// }
+$date1="2013-03-15";
 
-// formaterDateFr($date)
+// Afficher date du jour en français
+$formatter = new IntlDateFormatter('fr_FR', IntlDateFormatter::FULL, IntlDateFormatter::NONE);
+
+    echo ucfirst($formatter->format(date_create($date1)))."<br>";
+"<br>";
+
+
+//Afficher date var en anglais
+$date=date_create($date1);
+
+    echo date_format($date,'l jS \of F Y');
 
 ?>
