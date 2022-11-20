@@ -33,7 +33,7 @@ function generList($tableau){
     }
         $result.="</select><p><input type='submit' value ='OK'></p></form>";
 return $result;
-
+}
 
 
 

@@ -17,13 +17,20 @@ Class Voiture
         $this->_vitesseActuelle=$vitesseActuelle;
     }
     public function getInfo(){
-        return ($this->_marque);
+        
+        
+        return $this->_marque;
         return $this->_modele;
         return $this->_nbPortes;
         return $this->_vitesseActuelle;
 
     }
-    
+    public function test() {
+        var_dump(get_object_vars($this));
+    }
+    public function setVitesse($speed){
+        $this->_vitesseActuelle=$speed;
+    }
     public function demarrer(){
 
     }
@@ -39,10 +46,25 @@ Class Voiture
     public function caract(){
 
     }
-
-
 }
 
 $v1= new Voiture("Peugeot", "408", "5", "0");
+
+$v1->setVitesse(50);
+
 echo $v1->getInfo();
+// var_dump(get_object_vars($v1));
+// $v1->test();
+
+
+// echo $v1->getInfo()."<br>";
+
+
+
+
+
+
+
+
+
 ?>

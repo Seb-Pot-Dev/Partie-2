@@ -13,5 +13,5 @@ Class Ordinateur{
     }
 
     
-    $poste = new Ordinateur();
+    $poste = new Ordinateur("Asus", "Vivobook", "Tactile", "0");
     $poste->allumer();
